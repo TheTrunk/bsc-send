@@ -19,3 +19,5 @@ async function massSending() {
     await delay(30000); // wait 30s
   }
 }
+
+massSending();
