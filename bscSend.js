@@ -1,3 +1,5 @@
+const bscSend = require('./bsc.js');
+
 const coinSecrets = {
   address: 'MySendingBSCaddress',
   privateKey: 'MyPrivateKey',
