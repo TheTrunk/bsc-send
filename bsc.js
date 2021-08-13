@@ -16,7 +16,7 @@ const coinConfig = {
   testnetContract: '0x690cc0235abea2cf89213e30d0f0ea0fc054b909',
 },
 
-const coinConfig = config.coins.bsc;
+// const coinConfig = config.coins.bsc;
 
 const defaultGasPrice = coinConfig.gasPrice;
 const defaultGasLimit = coinConfig.gasLimit;
