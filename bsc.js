@@ -14,7 +14,7 @@ const coinConfig = {
   testnet: false,
   contract: '0xaff9084f2374585879e8b434c399e29e80cce635',
   testnetContract: '0x690cc0235abea2cf89213e30d0f0ea0fc054b909',
-},
+};
 
 // const coinConfig = config.coins.bsc;
 
