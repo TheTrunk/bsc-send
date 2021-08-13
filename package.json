@@ -1,0 +1,50 @@
+{
+  "name": "fusion",
+  "version": "1.0.0",
+  "description": "fusion app",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "mocha tests --timeout 10000",
+    "lint": "eslint src/",
+    "testkadena": "mocha tests --timeout 10000 --grep 'Kadena'",
+    "testservice": "mocha tests --timeout 10000 --grep 'Service'",
+    "testgeneral": "mocha tests --timeout 10000 --grep 'General'",
+    "testeth": "mocha tests --timeout 10000 --grep 'Eth'",
+    "testbsc": "mocha tests --timeout 10000 --grep 'Bsc'"
+  },
+  "author": "Tadeas Kmenta",
+  "license": "MIT",
+  "dependencies": {
+    "abi": "file:lib/abi",
+    "apicache": "^1.5.3",
+    "axios": "^0.21.0",
+    "bignumber.js": "^9.0.1",
+    "bitcoinjs-lib": "^5.2.0",
+    "bitgo-utxo-lib": "https://github.com/zelcore-io/bitgo-utxo-lib",
+    "chai": "^4.2.0",
+    "config": "^3.3.2",
+    "cors": "^2.8.5",
+    "ethereumjs-common": "^1.5.2",
+    "ethereumjs-tx": "^2.1.2",
+    "express": "^4.17.1",
+    "mocha": "^8.2.1",
+    "mongodb": "^3.6.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "pact-lang-api": "https://github.com/zelcore-io/pact-lang-api",
+    "qs": "^6.9.4",
+    "supertest": "^6.0.1",
+    "tweetnacl": "^1.0.3",
+    "web3": "^1.3.6",
+    "zelcorejs": "https://github.com/zelcore-io/zelcorejs"
+  },
+  "devDependencies": {
+    "eslint": "^7.14.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "power-assert": "^1.6.1"
+  }
+}
