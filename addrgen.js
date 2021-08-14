@@ -4,7 +4,7 @@ const zelcorejs = require('zelcorejs');
 const secp256k1 = require('secp256k1');
 const {
   keccak256,
-} = require("js-sha3");
+} = require('js-sha3');
 
 const seedHex = 'dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd'; // my super strong seed phrase
 const numberOfAddresses = 100;
@@ -26,11 +26,11 @@ for (let addressNumber = 0; addressNumber < numberOfAddresses; addressNumber += 
     pk = zelcorejs.address.WIFToPrivKey(pk);
   }
 
-  const pkbuffer = Buffer.from(pk, "hex");
+  const pkbuffer = Buffer.from(pk, 'hex');
   const pubKeyETHbuffer = secp256k1.publicKeyCreate(pkbuffer, false).slice(1);
   const publicAddrETHFull = keccak256(pubKeyETHbuffer);
-  const buf2 = Buffer.from(publicAddrETHFull, "hex");
-  const publicAddrETH = `0x${buf2.slice(-20).toString("hex")}`;
+  const buf2 = Buffer.from(publicAddrETHFull, 'hex');
+  const publicAddrETH = `0x${buf2.slice(-20).toString('hex')}`;
   // console.log(publicAddrETH);
   addresses.push(publicAddrETH);
 }

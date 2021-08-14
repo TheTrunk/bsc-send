@@ -1,4 +1,3 @@
-const config = require('config');
 const Web3 = require('web3');
 const abi = require('abi');
 const EthereumTx = require('ethereumjs-tx').Transaction;
